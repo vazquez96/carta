@@ -6241,7 +6241,7 @@ button {
 
     .hero {
         position: absolute;
-        top: clamp(42px, 10vh, 76px);
+        top: clamp(84px, 15vh, 140px);
         left: 50%;
         width: min(92vw, 480px);
         margin: 0;
