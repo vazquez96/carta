@@ -233,7 +233,7 @@ function closeMessageCard() {
 
   setTimeout(() => {
     openMessage.classList.remove("message-return");
-  }, 550);
+  }, 850);
 }
 
 closeMessage.addEventListener("click", closeMessageCard);
@@ -381,7 +381,7 @@ async function startCountdown() {
        DEJAMOS EL MOMENTO FINAL
     ===================================================== */
 
-  await sleep(1600);
+  await sleep(2500);
 
   if (token !== countdownToken) return;
 
