@@ -14,6 +14,25 @@ const countdownOverlay = document.getElementById("countdownOverlay");
 const countdownNumber = document.getElementById("countdownNumber");
 
 const petalsContainer = document.getElementById("petals");
+const pageTitle = document.getElementById("pageTitle");
+const heroSmall = document.getElementById("heroSmall");
+
+const examDate = new Date(2026, 10, 7);
+const today = new Date();
+const todayInUtc = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+const examDateInUtc = Date.UTC(
+  examDate.getFullYear(),
+  examDate.getMonth(),
+  examDate.getDate(),
+);
+const daysUntilExam = Math.round((examDateInUtc - todayInUtc) / 86400000);
+
+if (daysUntilExam > 0) {
+  const dayLabel = daysUntilExam === 1 ? "día" : "días";
+  const verb = daysUntilExam === 1 ? "Falta" : "Faltan";
+  pageTitle.textContent = `${verb} ${daysUntilExam} ${dayLabel} para tu día importante 💛`;
+  heroSmall.textContent = `${verb} ${daysUntilExam} ${dayLabel} para tu día`;
+}
 
 /* =========================================================
    ESTADO
