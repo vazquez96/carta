@@ -6241,7 +6241,7 @@ button {
 
     .hero {
         position: absolute;
-        top: clamp(84px, 15vh, 140px);
+        top: clamp(112px, 20vh, 190px);
         left: 50%;
         width: min(92vw, 480px);
         margin: 0;
@@ -6251,10 +6251,12 @@ button {
 
     .hero-small {
         font-size: clamp(1.1rem, 5vw, 1.7rem);
+        text-shadow: 0 2px 8px rgba(0, 0, 0, .95), 0 0 18px rgba(0, 0, 0, .8);
     }
 
     .hero h1 {
         font-size: clamp(2.6rem, 11vw, 4.2rem);
+        text-shadow: 0 3px 8px rgba(0, 0, 0, .9), 0 0 18px rgba(0, 0, 0, .75);
     }
 
     .hero-subtitle {
