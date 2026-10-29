@@ -30,7 +30,7 @@ const daysUntilExam = Math.round((examDateInUtc - todayInUtc) / 86400000);
 if (daysUntilExam > 0) {
   const dayLabel = daysUntilExam === 1 ? "día" : "días";
   const verb = daysUntilExam === 1 ? "Falta" : "Faltan";
-  pageTitle.textContent = `${verb} ${daysUntilExam} ${dayLabel} para tu día importante 💛`;
+  pageTitle.textContent = `${verb} ${daysUntilExam} ${dayLabel} para un día importante 💛`;
   heroSmall.textContent = `${verb} ${daysUntilExam} ${dayLabel} para tu día`;
 }
 
