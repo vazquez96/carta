@@ -217,23 +217,6 @@ function closeMessageCard() {
   openMessage.classList.remove("message-opening");
 
   openMessage.classList.remove("message-return");
-
-  /*
-   * Reiniciamos la animación
-   * del botón.
-   */
-
-  void openMessage.offsetWidth;
-
-  openMessage.classList.add("message-return");
-
-  /*
-   * Limpiamos la clase.
-   */
-
-  setTimeout(() => {
-    openMessage.classList.remove("message-return");
-  }, 850);
 }
 
 closeMessage.addEventListener("click", closeMessageCard);

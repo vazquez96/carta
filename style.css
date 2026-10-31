@@ -2631,28 +2631,6 @@ button {
    CONTADOR ACTIVO
 ========================================================= */
 
-.countdown-overlay.active {
-
-    animation:
-        countdownBackground .7s ease-out;
-}
-
-
-@keyframes countdownBackground {
-
-    from {
-
-        background:
-            rgba(3, 9, 24, .7);
-    }
-
-    to {
-
-        background:
-            rgba(3, 9, 24, .95);
-    }
-}
-
 /* =========================================================
    V2 - AMBIENTE VIVO DE TOKIO
 ========================================================= */
@@ -5620,10 +5598,10 @@ button {
 }
 
 .close-button {
-    position: fixed;
+    position: absolute;
     z-index: 3;
-    top: max(clamp(14px, 1.4vw, 28px), env(safe-area-inset-top));
-    right: max(clamp(14px, 1.4vw, 28px), env(safe-area-inset-right));
+    top: 12px;
+    right: 12px;
     display: grid;
     place-items: center;
     width: clamp(38px, 3vw, 62px);
@@ -5693,7 +5671,7 @@ button {
 }
 
 .flower-top-right {
-    top: 13px;
+    top: 66px;
     right: 14px;
     font-size: clamp(28px, 2.7vw, 52px);
     transform: rotate(12deg);
@@ -6154,7 +6132,9 @@ button {
 }
 
 .button-icon {
-    font-size: clamp(17px, 1.8vw, 34px);
+    font-size: 1.8em;
+    line-height: 1;
+    transform: translateY(-0.1em);
 }
 
 .button-arrow {
@@ -6324,6 +6304,14 @@ button {
         height: auto;
         max-height: calc(100svh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
         padding: 46px clamp(22px, 6vw, 32px) 22px;
+    }
+
+    .flower-top-right {
+        top: 60px;
+    }
+
+    .close-button {
+        right: 12px;
     }
 
     .message-card h2 {
