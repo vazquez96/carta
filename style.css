@@ -6203,8 +6203,9 @@ button {
 }
 
 .message-content p {
+    margin-bottom: 12px;
     font-size: clamp(.66rem, 1.05vw, 1.3rem);
-    line-height: 1.34;
+    line-height: 1.48;
 }
 
 .message-content .message-highlight {
@@ -6212,7 +6213,12 @@ button {
 }
 
 .message-content .message-signature {
+    margin: 12px 0 4px;
     font-size: clamp(.82rem, 1.25vw, 1.5rem);
+}
+
+.start-exam-button {
+    margin: 18px auto 0;
 }
 
 .close-button {
